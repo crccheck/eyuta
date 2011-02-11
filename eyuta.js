@@ -48,7 +48,7 @@ function Wall(level,vs){
     return i + 1;
   }
   this.level = level;
-  this.armor = 15+8*Math.floor(level/3);
+  this.armor = 4 * level;
   this.hp    = 100+50*level;
   this.dmgRecieved = Math.max(vs - this.armor,0);
   this.hitsPerSection = Math.ceil(this.hp/this.dmgRecieved);
